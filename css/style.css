@@ -139,7 +139,7 @@ body {
     margin-right: 10px;
     width: 16px;
     height: 16px;
-    fill: var(--inactive-icon);
+    fill: var(--inactive-text);
 }
 .contact-icon:hover {
     fill: var(--active-link);
