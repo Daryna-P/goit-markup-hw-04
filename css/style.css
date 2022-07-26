@@ -431,6 +431,7 @@ body {
 .title-footer {
     margin-top: 14px;
     color: var(--accent-white);
+    margin-bottom: 20px;
 }
 .footer-sm-list {
     display: flex;
