@@ -139,10 +139,7 @@ body {
     margin-right: 10px;
     width: 16px;
     height: 16px;
-    fill: var(--inactive-text);
-}
-.contact-icon:hover {
-    fill: var(--active-link);
+    fill: currentColor;
 }
 /* hero */
 .hero-section {
@@ -223,6 +220,7 @@ body {
     width: 270px;
 }
 .idea-item::before {
+    border-radius: 4px;
     display: block;
     content: "";
     height: 120px;
@@ -332,23 +330,25 @@ body {
     justify-items: center;
     gap: 30px;
 }
-.client-box {
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--inactive-icon);
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
 }
-.client-box:hover,
-.client-box:focus {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--active-link);
 }
 .client-icon {
     justify-self: center;
     fill: var(--inactive-icon);
 }
-.client-box:hover .client-icon,
-.client-box:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
     fill: var(--active-link)
 }
 
@@ -364,7 +364,12 @@ body {
     gap: 30px;
     flex-wrap: wrap;
 }
-.portfolio-card:hover {
+
+.project-list-link {
+    display: block;
+}
+.project-list-link:hover,
+.project-list-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-bottom {
@@ -431,5 +436,8 @@ body {
 }
 .footer-sm-link {
     background: rgba(255, 255, 255, 0.1);
+    fill: var(--accent-white);
+}
+.footer-sm-icon {
     fill: var(--accent-white);
 }
